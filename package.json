@@ -1,31 +1,35 @@
 {
-    "name": "mongodb",
-    "version": "0.1.4",
-    "description": "CRUD implementation in Postman, the client-side interface, and MongoDB database management.",
+    "name": "final-backend",
+    "version": "1.0.0",
+    "description": "Proyecto CRUD con MongoDB, Express y Socket.io, con interfaz de cliente y gestión de base de datos.",
     "keywords": [
         "database",
         "mongodb",
-        "communicate",
-        "front",
-        "back",
+        "express",
+        "socket.io",
         "crud",
-        "express"
+        "api",
+        "backend",
+        "nodejs"
     ],
-    "homepage": "https://github.com/codeOchoa/mongodb#readme",
+    "homepage": "https://github.com/Victoria-Mondino/final-backend",
     "bugs": {
-        "url": "https://github.com/codeOchoa/mongodb/issues"
+        "url": "https://github.com/Victoria-Mondino/final-backend/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/codeOchoa/mongodb.git"
+        "url": "git+https://github.com/Victoria-Mondino/final-backend.git"
     },
     "license": "ISC",
-    "author": "codeOchoa",
+    "author": "Victoria Mondino",
     "type": "module",
     "main": "server.js",
     "scripts": {
         "dev": "nodemon server.js",
-        "start": "node server.js"
+        "start": "node server.js",
+        "lint": "eslint .",
+        "format": "prettier --write .",
+        "test": "jest"
     },
     "dependencies": {
         "dotenv": "^16.4.7",
@@ -39,6 +43,9 @@
         "uuid": "^11.1.0"
     },
     "devDependencies": {
-        "nodemon": "^3.1.9"
+        "nodemon": "^3.1.9",
+        "eslint": "^8.54.0",
+        "prettier": "^3.2.5",
+        "jest": "^29.7.0"
     }
 }

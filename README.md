@@ -7,7 +7,9 @@
 🐞 Errores Conocidos
 📖 Introducción
 
-Este proyecto pone en práctica el uso de CRUD (Create, Read, Update, Delete) utilizando Postman, una interfaz para el cliente y la gestión de datos con MongoDB.
+Este proyecto implementa un CRUD (Create, Read, Update, Delete) utilizando Postman, una interfaz para el cliente y la gestión de datos con MongoDB.
+
+🔹 Repositorio en GitHub: final-backend
 
 📚 Documentación
 
@@ -32,7 +34,18 @@ http://localhost:8080/home (Algunas secciones pueden estar en desarrollo 🚧)
 
 🔹 Acceso directo a MongoDB Compass:
 
-mongodb://127.0.0.1:27017/solarflow
+mongodb://127.0.0.1:27017/final-backend
+🗂️ Dependencias
+Este proyecto utiliza las siguientes librerías clave:
+
+📦 express - Framework web para Node.js
+🗄️ mongoose - Modelado de datos para MongoDB
+⚙️ dotenv - Gestión de variables de entorno
+🔄 nodemon - Recarga automática en desarrollo
+📡 socket.io - Comunicación en tiempo real
+Para instalar todas las dependencias, ejecuta:
+
+npm install
 🗂️ Estructura de los productos
 Los productos en la base de datos siguen este esquema:
 
