@@ -1,0 +1,19 @@
+<section class="home">
+    <div class="home-container">
+        <h1 class="title-h">Store</h1>
+    </div>
+    <div class="products">
+        {{#each products}}
+                <div class="card">
+                    <a href="/productDetails/{{this._id}}" class="product-link">
+                        <img src="{{this.thumbnails.[0]}}" alt="{{this.title}}">
+                        <h3>{{this.title}}</h3>
+                        <div class="price">
+                            <p>$</p><span>{{this.price}}</span>
+                        </div>
+                        <button class="add-to-cart" data-id="{{this._id}}">Add to Cart</button>
+                    </a>
+                </div>
+        {{/each}}
+    </div>
+</section>

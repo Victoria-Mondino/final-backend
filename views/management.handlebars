@@ -1,0 +1,24 @@
+<section class="management">
+    <div class="management-container">
+        <h1 class="title-m">Management</h1>
+    </div>
+    <ul class="product-list-m" id="product-list">
+        {{#each products}}
+            <li class="item-list-m" id="product-{{this.id}}">
+                {{this.code}} - <strong>{{this.title}}</strong> - ${{this.price}}
+                <button class="delete-button" onclick="deleteProduct('{{this.id}}')" aria-label="Delete product"><img src="/trash-can-solid.svg" alt="Delete" class="trash-icon"></button>
+            </li>
+        {{/each}}
+    </ul>
+
+    <h2 class="subtitle-m">Add Product</h2>
+    <form class="form" id="product-form">
+        <input type="text" id="title" placeholder="Title" required autocomplete="off">
+        <input type="text" id="description" placeholder="Description" required autocomplete="off">
+        <input type="text" id="code" placeholder="Code" required autocomplete="off">
+        <input type="number" id="price" placeholder="Price" min="0" max="99999" required autocomplete="off">
+        <input type="number" id="stock" placeholder="Stock" min="0" max="999" required autocomplete="off">
+        <input type="text" id="category" placeholder="Category" required autocomplete="off">
+        <button type="submit">Add</button>
+    </form>
+</section>

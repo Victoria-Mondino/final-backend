@@ -1,0 +1,44 @@
+{
+    "name": "mongodb",
+    "version": "0.1.4",
+    "description": "CRUD implementation in Postman, the client-side interface, and MongoDB database management.",
+    "keywords": [
+        "database",
+        "mongodb",
+        "communicate",
+        "front",
+        "back",
+        "crud",
+        "express"
+    ],
+    "homepage": "https://github.com/codeOchoa/mongodb#readme",
+    "bugs": {
+        "url": "https://github.com/codeOchoa/mongodb/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codeOchoa/mongodb.git"
+    },
+    "license": "ISC",
+    "author": "codeOchoa",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js",
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "express-handlebars": "^8.0.1",
+        "express-session": "^1.18.1",
+        "mongoose": "^8.12.1",
+        "mongoose-paginate-v2": "^1.9.0",
+        "morgan": "^1.10.0",
+        "socket.io": "^4.8.1",
+        "uuid": "^11.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}
